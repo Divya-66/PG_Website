@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 @tailwind base;
@@ -7,33 +6,33 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 60 56% 91%;           /* Beige */
+    --foreground: 30 20% 20%;           /* Dark brown */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 48 41% 94%;                 /* Cream */
+    --card-foreground: 30 20% 20%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 48 41% 94%;              /* Cream */
+    --popover-foreground: 30 20% 20%;
 
-    --primary: 221 83% 53%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 34 44% 63%;              /* Light brown */
+    --primary-foreground: 60 56% 91%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 48 41% 94%;            /* Cream */
+    --secondary-foreground: 30 20% 20%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 48 41% 94%;                /* Cream */
+    --muted-foreground: 30 20% 40%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 34 44% 63%;               /* Light brown */
+    --accent-foreground: 60 56% 91%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 60 56% 91%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 221 83% 53%;
+    --border: 34 44% 80%;               /* Light brown border */
+    --input: 34 44% 80%;
+    --ring: 34 44% 63%;
 
     --radius: 0.5rem;
   }
@@ -56,7 +55,7 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-primary text-white px-6 py-3 rounded-md font-medium hover:bg-pgBlue-dark transition-all duration-300 hover:animate-button-glow;
+    @apply bg-primary text-white px-6 py-3 rounded-md font-medium hover:bg-primary/90 transition-all duration-300 hover:animate-button-glow;
   }
   
   .section-container {

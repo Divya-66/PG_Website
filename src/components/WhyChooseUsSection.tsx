@@ -1,4 +1,3 @@
-
 import React from "react";
 
 const WhyChooseUsSection = () => {
@@ -18,14 +17,14 @@ const WhyChooseUsSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-background">
       <div className="section-container">
         <h2 className="section-title">Why Choose Us?</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {reasons.map((reason, index) => (
-            <div key={index} className="bg-pgBlue-light rounded-lg p-6 text-center">
-              <h3 className="text-xl font-semibold mb-3 text-primary">{reason.title}</h3>
-              <p className="text-gray-700">{reason.description}</p>
+            <div key={index} className="bg-card rounded-lg p-6 text-center shadow-md border border-border">
+              <h3 className="text-xl font-bold mb-3 text-primary">{reason.title}</h3>
+              <p className="text-secondary-foreground">{reason.description}</p>
             </div>
           ))}
         </div>

@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Wifi, Shield, Utensils, CircleDollarSign, Trash, Gamepad2 } from "lucide-react";
 
@@ -10,12 +9,12 @@ interface AmenityProps {
 
 const Amenity = ({ icon, title, description }: AmenityProps) => {
   return (
-    <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
-      <div className="text-primary mb-4 p-3 bg-pgBlue-light rounded-full">
+    <div className="flex flex-col items-center p-6 bg-card rounded-lg shadow-sm hover:shadow-md transition-shadow">
+      <div className="text-primary mb-4 p-3 bg-secondary rounded-full">
         {icon}
       </div>
       <h3 className="text-lg font-semibold mb-2">{title}</h3>
-      <p className="text-gray-600 text-center text-sm">{description}</p>
+      <p className="text-secondary-foreground text-center text-sm">{description}</p>
     </div>
   );
 };

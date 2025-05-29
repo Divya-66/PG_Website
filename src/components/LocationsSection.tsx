@@ -23,7 +23,7 @@ const LocationCard = ({ id, name, image, address, nearbyPlaces }: LocationCardPr
         <p className="text-gray-600 text-sm mb-2">{address}</p>
         <p className="text-sm text-gray-500 mb-4">Near: {nearbyPlaces}</p>
         <Link to={`/pg/${id}`}>
-          <Button className="w-full bg-primary hover:bg-pgBlue-dark">View Details</Button>
+          <Button className="w-full bg-primary hover:bg-primary/90 transition-transform duration-200 hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">View Details</Button>
         </Link>
       </div>
     </div>

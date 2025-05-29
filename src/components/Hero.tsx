@@ -1,4 +1,3 @@
-
 import React from "react";
 
 const Hero = () => {
@@ -11,7 +10,7 @@ const Hero = () => {
 
   return (
     <div className="relative pt-20">
-      <div className="absolute inset-0 bg-gradient-to-r from-pgBlue-light to-pgGreen-light opacity-60 z-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-background to-card opacity-60 z-0"></div>
       <div className="relative min-h-[80vh] flex items-center z-10">
         <div className="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center">
           <div className="w-full md:w-1/2 text-center md:text-left mb-12 md:mb-0">
@@ -25,7 +24,7 @@ const Hero = () => {
             </p>
             <button
               onClick={handleBookClick}
-              className="btn-primary text-lg"
+              className="btn-primary text-lg transition-transform duration-200 hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
             >
               Book Your Visit
             </button>

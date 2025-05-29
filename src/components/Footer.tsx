@@ -1,21 +1,20 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 pt-12 pb-8">
+    <footer className="bg-secondary pt-12 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-lg font-bold mb-4">CozyStay PG</h3>
-            <p className="text-gray-600 mb-4">
+            <p className="text-secondary-foreground mb-4">
               Safe, Comfortable, Home-like PGs for Students and Young Professionals.
             </p>
             <div className="flex space-x-4">
               <a 
                 href="#" 
-                className="text-gray-400 hover:text-primary transition-colors"
+                className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Facebook"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -24,7 +23,7 @@ const Footer = () => {
               </a>
               <a 
                 href="#" 
-                className="text-gray-400 hover:text-primary transition-colors"
+                className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Instagram"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -33,7 +32,7 @@ const Footer = () => {
               </a>
               <a 
                 href="#" 
-                className="text-gray-400 hover:text-primary transition-colors"
+                className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Twitter"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -45,7 +44,7 @@ const Footer = () => {
 
           <div>
             <h3 className="text-lg font-bold mb-4">Contact Us</h3>
-            <ul className="space-y-3 text-gray-600">
+            <ul className="space-y-3 text-secondary-foreground">
               <li className="flex items-start">
                 <svg className="w-5 h-5 mr-2 mt-0.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
@@ -72,7 +71,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">Testimonials</h3>
             <div className="bg-white p-4 rounded-lg shadow-sm">
-              <p className="italic text-gray-600 mb-2">
+              <p className="italic text-secondary-foreground mb-2">
                 "CozyStay feels like a home away from home. Safe environment and delicious food!"
               </p>
               <p className="font-medium">- Priya S., Student</p>
@@ -81,7 +80,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-200 mt-10 pt-6">
-          <p className="text-center text-gray-500 text-sm">
+          <p className="text-center text-secondary-foreground text-sm">
             &copy; {new Date().getFullYear()} CozyStay PG. All rights reserved.
           </p>
         </div>
